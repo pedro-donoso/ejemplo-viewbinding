@@ -15,8 +15,14 @@ class MainActivity : ComponentActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // Configurar el comportamiento del botón 1
         binding.btn.setOnClickListener {
-            Toast.makeText(this, "MÉTODO VIEW BINDING", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this, "MÉTODO VIEW BINDING BOTÓN 1", Toast.LENGTH_SHORT).show()
+        }
+
+        // Configurar el comportamiento del botón 2
+        binding.btn2.setOnClickListener {
+            Toast.makeText(this, "MÉTODO VIEW BINDING BOTÓN 2", Toast.LENGTH_SHORT).show()
         }
     }
 }
